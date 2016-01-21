@@ -12,6 +12,8 @@
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/app.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react-dom.js"></script>
 </head>
 <body>
     <header>
@@ -44,98 +46,10 @@
                 <div class="main" style="background-image: url('@Url.Content("~/images/background.jpg")')">
                     <a name="courses" class="anchor-offset"></a>
                     <h2>My Courses</h2>
-                    <div class="row record">
-                        <div class="record-rating">
-                            4.5
-                        </div>
-                        <div class="col-sm-12 record-detail">
-                            <a href="https://app.pluralsight.com/library/courses/front-end-web-app-html5-javascript-css" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
-                            <div class="record-description">I haven't finished this one, but so far it seems interesting.  It's nice having a primer on HTML5 and CSS3.</div>
-                        </div>
-                    </div>
-                    <div class="row record">
-                        <div class="record-rating">
-                            4.5
-                        </div>
-                        <div class="col-sm-12 record-detail">
-                            <a href="https://app.pluralsight.com/library/courses/front-end-web-app-html5-javascript-css" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
-                            <div class="record-description">I haven't finished this one, but so far it seems interesting.  It's nice having a primer on HTML5 and CSS3.</div>
-                        </div>
-                    </div>
-                    <div class="row record">
-                        <div class="record-rating">
-                            4.5
-                        </div>
-                        <div class="col-sm-12 record-detail">
-                            <a href="https://app.pluralsight.com/library/courses/front-end-web-app-html5-javascript-css" class="record-title">Front-End Web Development Quick Start With HTML5, CSS, and JavaScript</a>
-                            <div class="record-description">I haven't finished this one, but so far it seems interesting.  It's nice having a primer on HTML5 and CSS3.</div>
-                        </div>
-                    </div>
+                    <div id="coursesNode"></div>
                     <a name="articles" class="anchor-offset anchor-offset-scrolled"></a>
                     <h2>My Articles</h2>
-                    <div class="row record">
-                        <div class="record-rating">
-                            4.0
-                        </div>
-                        <div class="col-sm-12 record-detail">
-                            <a href="http://stackoverflow.com/questions/31571224/visual-studio-2015-cant-sign-in-use-nuget-etc-behind-corporate-proxy" class="record-title">Visual Studio 2015 - Can't sign in, Use NuGet, etc. behind Corporate Proxy</a>
-                            <div class="record-description">The accepted answer has a helpful tip on how to get this working.  Has to do with out-of-date firewall?</div>
-                        </div>
-                    </div>
-                    <div class="row record">
-                        <div class="record-rating">
-                            4.0
-                        </div>
-                        <div class="col-sm-12 record-detail">
-                            <a href="http://stackoverflow.com/questions/31571224/visual-studio-2015-cant-sign-in-use-nuget-etc-behind-corporate-proxy" class="record-title">Visual Studio 2015 - Can't sign in, Use NuGet, etc. behind Corporate Proxy</a>
-                            <div class="record-description">The accepted answer has a helpful tip on how to get this working.  Has to do with out-of-date firewall?</div>
-                        </div>
-                    </div>
-                    <div class="row record">
-                        <div class="record-rating">
-                            4.0
-                        </div>
-                        <div class="col-sm-12 record-detail">
-                            <a href="http://stackoverflow.com/questions/31571224/visual-studio-2015-cant-sign-in-use-nuget-etc-behind-corporate-proxy" class="record-title">Visual Studio 2015 - Can't sign in, Use NuGet, etc. behind Corporate Proxy</a>
-                            <div class="record-description">The accepted answer has a helpful tip on how to get this working.  Has to do with out-of-date firewall?</div>
-                        </div>
-                    </div>
-                    <div class="row record">
-                        <div class="record-rating">
-                            4.0
-                        </div>
-                        <div class="col-sm-12 record-detail">
-                            <a href="http://stackoverflow.com/questions/31571224/visual-studio-2015-cant-sign-in-use-nuget-etc-behind-corporate-proxy" class="record-title">Visual Studio 2015 - Can't sign in, Use NuGet, etc. behind Corporate Proxy</a>
-                            <div class="record-description">The accepted answer has a helpful tip on how to get this working.  Has to do with out-of-date firewall?</div>
-                        </div>
-                    </div>
-                    <div class="row record">
-                        <div class="record-rating">
-                            4.0
-                        </div>
-                        <div class="col-sm-12 record-detail">
-                            <a href="http://stackoverflow.com/questions/31571224/visual-studio-2015-cant-sign-in-use-nuget-etc-behind-corporate-proxy" class="record-title">Visual Studio 2015 - Can't sign in, Use NuGet, etc. behind Corporate Proxy</a>
-                            <div class="record-description">The accepted answer has a helpful tip on how to get this working.  Has to do with out-of-date firewall?</div>
-                        </div>
-                    </div>
-                    <div class="row record">
-                        <div class="record-rating">
-                            4.0
-                        </div>
-                        <div class="col-sm-12 record-detail">
-                            <a href="http://stackoverflow.com/questions/31571224/visual-studio-2015-cant-sign-in-use-nuget-etc-behind-corporate-proxy" class="record-title">Visual Studio 2015 - Can't sign in, Use NuGet, etc. behind Corporate Proxy</a>
-                            <div class="record-description">The accepted answer has a helpful tip on how to get this working.  Has to do with out-of-date firewall?</div>
-                        </div>
-                    </div>
-                    <div class="row record">
-                        <div class="record-rating">
-                            4.0
-                        </div>
-                        <div class="col-sm-12 record-detail">
-                            <a href="http://stackoverflow.com/questions/31571224/visual-studio-2015-cant-sign-in-use-nuget-etc-behind-corporate-proxy" class="record-title">Visual Studio 2015 - Can't sign in, Use NuGet, etc. behind Corporate Proxy</a>
-                            <div class="record-description">The accepted answer has a helpful tip on how to get this working.  Has to do with out-of-date firewall?</div>
-                        </div>
-                    </div>
+                    <div id="articlesNode"></div>
                 </div>
             </section>
             <aside class="col-sm-2 col-sm-pull-8">
@@ -148,55 +62,12 @@
                     <div class="profile-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu pretium ligula, eget pulvinar tortor. Nullam dui ante, hendrerit nec auctor at, scelerisque accumsan neque. Vivamus eget rutrum sem, finibus facilisis lorem.
                     </div>
-                    <div>
-                        <label>Coures</label>
-                        <p class="form-control-static">12</p>
-                        <input type="text" value="12" class="form-control hidden" />
-                    </div>
-                    <div>
-                        <label>Articles</label>
-                        <p class="form-control-static">18</p>
-                        <input type="text" value="18" class="form-control hidden" />
-                    </div>
-                    <div class="row profile-buttons">
-                        <div class="col-sm-6 pull-right">
-                            <button class="btn btn-primary btn-block">Edit</button>
-                        </div>
-                        <div class="col-sm-6 hidden">
-                            <button class="btn btn-primary btn-block">Save</button>
-                        </div>
-                        <div class="col-sm-6 hidden">
-                            <button class="btn btn-danger btn-block">Cancel</button>
-                        </div>
-                    </div>
+                    <div id="profileNode"></div>
                 </div>
             </aside>
             <section class="col-sm-2">
                 <h2>Friends</h2>
-                <div class="friends">
-                    <div class="friend">
-                        <div class="img-circle friends-image-initials">
-                            <h3>HS</h3>
-                        </div>
-                        <h4>Homer Simpson</h4>
-                        <div class="friends-details">
-                            <div>22 courses taken</div>
-                            <div>19 articles read</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="friends">
-                    <div class="friend">
-                        <div class="img-circle friends-image-initials">
-                            <h3>MS</h3>
-                        </div>
-                        <h4>Marge Simpson</h4>
-                        <div class="friends-details">
-                            <div>20 courses taken</div>
-                            <div>35 articles read</div>
-                        </div>
-                    </div>
-                </div>
+                <div id="friendsNode"></div>                    
             </section>
         </div>
     </div>
@@ -205,8 +76,19 @@
     </footer>
 
     <script src="~/scripts/jquery-1.9.1.js"></script>
-    <script src="~/scripts/bootstrap.js"></script>
     <script type="text/javascript">
+        var dojoConfig = {
+            async: true,
+            packages: [
+                { name: "app", location: "@Url.Content("~/scripts/app")" }
+            ]
+        };
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script>
+    <script src="~/scripts/bootstrap.js"></script>
+    
+    <script type="text/javascript">
+        require(["app/app"]);
         $(window).scroll(function (e) {
             if ($(document).scrollTop() > 50) {
                 $('nav').addClass('scrolled');

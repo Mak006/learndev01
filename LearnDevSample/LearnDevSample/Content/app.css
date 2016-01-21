@@ -98,6 +98,7 @@ section, aside{
     border: solid 1px #BBB;
     box-shadow: 4px 4px 12px #BBB;
     padding: 2px;
+    margin-bottom: 16px;
 }
 .friends-image-initials{
     border: solid 3px #fff;
