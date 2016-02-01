@@ -2,7 +2,6 @@
 // for more information see the following page on the TypeScript wiki:
 // https://github.com/Microsoft/TypeScript/wiki/JSX
 
-
 export interface ProfileItemProps {
     value: number;
     title: string;
